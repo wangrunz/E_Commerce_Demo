@@ -124,3 +124,11 @@ CREATE TABLE Regions(
 ) ENGINE = INNODB;
 
 SET FOREIGN_KEY_CHECKS = 1;
+
+INSERT INTO BusinessCategory (CategoryName) VALUES ('Non-Profit'),('Profit');
+INSERT INTO ProductType (Name) VALUES ('Android'),('iPhone'),('Others');
+INSERT INTO Regions (Name) VALUES ('US');
+INSERT INTO Stores (Name,Street,City,State,ZIP,RegionID) VALUES ('NY Store','Some Street','Some City','NY','12315',1);
+INSERT INTO Salespersons (Name,Street,City,State,ZIP,Email,Pwd,StoreID,Salary) VALUES ('Someone','Some Street','Some City','NY','12315','123@123.com','123',1,1000.0);
+UPDATE Regions SET ManagerID=1 WHERE RegionID=1;
+UPDATE Stores SET ManagerID=1 WHERE StoreID=1;
