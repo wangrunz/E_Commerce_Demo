@@ -60,7 +60,7 @@ CREATE TABLE ProductType(
 
 CREATE TABLE Transactions(
     TransactionID INT PRIMARY KEY AUTO_INCREMENT,
-    TransactionDate DATETIME DEFAULT CURRENT_TIMESTAMP,
+    TransactionDate TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     SalespersonID INT,
     ProductID INT,
     Quantity INT,
